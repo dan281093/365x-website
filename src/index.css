@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+#computer a{
+	font-size: 12px;
+	font-weight:bold;
+
+}
+
+.card-body h5{
+	font-size: 40px;
+	color:#2fa8de;
+			}
+
+
+.card-body h6{
+	font-size: 32px;
+	color:#2fa8de;
+			}
+
+.card-body h6{
+	font-size: 32px;
+	color:#2fa8de;
+				}
+.card-body h4{
+	font-size: 32px;
+	color:#000;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 5%;
+	top:10%;
+			}
+
+
+button {
+	background-color: #2fa8de;
+	
+}
+
+.nav{
+	 background-color:rgba(0,255,255,0.5);
+} 
+
+
+#more{
+	display:none;
+
+}
+#more1{
+	display:none;
+	
+}
+.container-fluid h3 {
+font-size:32px;
+color:#000;
+text-align: center;
+}
+
+.container h3 {
+	font-size:32px;
+}
+
+
+.mobile button {
+background-color: #fff;
+}
+
+body > *{
+max-width: 1920px;
+} 
+
+
+@media (min-width:918px){
+    .mobile{
+        display: none;
+    }
+
+    .up{
+      margin-top:50px;
+      
+    }
+    .down{
+      margin-top: 50px;
+    }
+
+    
+}
+
+
+@media (max-width:917px){
+    #computer{
+    	
+        display: none;
+    }
+
+    .up{
+      /*margin-top: 20px;
+      margin-bottom: 20px;*/
+      padding: 0 0 0 0;
+    }
+
+    .down{
+      
+      padding:0 0 0 0;
+      
+    }
+    
+    .up .card-mobile{
+      width:50%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      font-size: 14px;
+      
+    }
+
+    .down .card-mobile{
+      width:50%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left:50%;
+      font-size: 14px;
+      
+    }
+
+
+   
+}
+
+
+
+
+.fa-1x {
+font-size: 1.5rem;
+}
+
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: #AC003A;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
+.dark-teal-text {
+color: #004d40;
+}
+
+
+
+
+.boxes-wrapper img {
+	width: 100%;
+	height:auto;
+	padding:5% 0% 5% 0%;
+}
+
+/* HOVER EFFECT FOR PICTURES */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+
+
+}
+
+.container :hover .overlay {
+  height: 100%;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
