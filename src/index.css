@@ -47,12 +47,12 @@ code {
 
 button {
 	background-color: #2fa8de;
-	
+
 }
 
 .nav{
 	 background-color:rgba(0,255,255,0.5);
-} 
+}
 
 
 #more{
@@ -61,7 +61,7 @@ button {
 }
 #more1{
 	display:none;
-	
+
 }
 .container-fluid h3 {
 font-size:32px;
@@ -80,7 +80,7 @@ background-color: #fff;
 
 body > *{
 max-width: 1920px;
-} 
+}
 
 
 @media (min-width:918px){
@@ -90,19 +90,19 @@ max-width: 1920px;
 
     .up{
       margin-top:50px;
-      
+
     }
     .down{
       margin-top: 50px;
     }
 
-    
+
 }
 
 
 @media (max-width:917px){
     #computer{
-    	
+
         display: none;
     }
 
@@ -113,17 +113,17 @@ max-width: 1920px;
     }
 
     .down{
-      
+
       padding:0 0 0 0;
-      
+
     }
-    
+
     .up .card-mobile{
       width:50%;
       margin-top: 10%;
       margin-bottom: 10%;
       font-size: 14px;
-      
+
     }
 
     .down .card-mobile{
@@ -132,11 +132,11 @@ max-width: 1920px;
       margin-bottom: 10%;
       margin-left:50%;
       font-size: 14px;
-      
+
     }
 
 
-   
+
 }
 
 
@@ -201,8 +201,6 @@ color: #004d40;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-
 
 
 
