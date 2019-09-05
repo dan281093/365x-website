@@ -273,10 +273,40 @@ h2.timer.count-title.count-number {
   margin-top: 50%;
 }
 
+.white-color {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
 
+.alumni{
+  margin-top: 250px;
+}
 
+.ecosystem {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
 
+.ecosystem p {
+  color: black;
+  font-weight: 400;
+}
 
+.title-eco {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 5rem;
+  padding-bottom: 40px;
+}
+
+.ecosystem-contain {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
 
 
