@@ -2,109 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="../src/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="../src/App.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    Notice the use of %PUBLIC_URL% in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>365x</title>
-
-<!-- NAVIGATION -->
-<nav id="computer" class="navbar sticky-top navbar-light bg-light">
-  <a class="navbar-brand" href="#"> <img style="width:120px; height:50px;" src="/img/final-logo.png"></a>
-  <a class="navbar-brand" href="index.html/#program">Program</a>
-  <a class="navbar-brand" href="index.html/#partners">Partners</a>
-  <a class="navbar-brand" href="index.html/#location">The Locations</a>
-  <a class="navbar-brand" href="index.html/#people">People</a>
-  <a class="navbar-brand" href="companies.html">Companies</a>
-  <a class="navbar-brand" href="#events">Events</a>
-  <a class="navbar-brand" href="#work">Work With Us</a>
-  <a class="navbar-brand" href="#faq">FAQ</a>
-  <a class="navbar-brand" href="#contact">Contact Us</a>
-  <a class="navbar-brand" href="#apply" style="background-color:#2fa8de; color:#ffffff"> Apply Now</a>
-</nav>
-<!-- /.NAVIGATION -->
-
-<!--Navbar mobile-->
-<div class="mobile">
-  <nav class="navbar light-blue lighten-4">
-    <a class="navbar-brand" href="#"><img style="width:120px; height:50px;" src="/img/final-logo.png"></a>
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> ☰</button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-      <ul class="navbar-nav mr-auto">
-       <li class="nav-item active"> <a class="nav-link" href="#program">Program <span class="sr-only">(current)</span></a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#partners">Partners</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#location">The Locations</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#people">People</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#companies">Companies</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#events">Events</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#work">Work With Us</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#contact">Contact Us</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#apply" style="background-color:#2fa8de; color:#ffffff">Apply now</a> </li>
-     </ul>
+    <!-- NAVIGATION -->
+    <nav id="computer" class="navbar sticky-top navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"> <img style="width:120px; height:50px;" src="img/final-logo.png"></a>
+      <a class="navbar-brand" href="index.html#program">Program</a>
+      <a class="navbar-brand" href="index.html#partners">Partners</a>
+      <a class="navbar-brand" href="index.html#location">The Locations</a>
+      <a class="navbar-brand" href="index.html#people">People</a>
+      <a class="navbar-brand" href="companies.html">Companies</a>
+      <a class="navbar-brand" href="#events">Events</a>
+      <a class="navbar-brand" href="#work">Work With Us</a>
+      <a class="navbar-brand" href="#faq">FAQ</a>
+      <a class="navbar-brand" href="#contact">Contact Us</a>
+      <a class="navbar-brand" href="#apply" style="background-color:#2fa8de; color:#ffffff; padding:10px;"> Apply Now</a>
+    </nav>
+    <!-- /.NAVIGATION -->
+    <!--Navbar mobile-->
+    <div class="mobile">
+      <nav class="navbar light-blue lighten-4">
+        <a class="navbar-brand" href="index.html"><img style="width:120px; height:50px;" src="img/final-logo.png"></a>
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> ☰</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <a class="nav-link" href="#program">Program <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#program">Partners</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#location">The Locations</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#people">People</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#companies">Companies</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#events">Events</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#work">Work With Us</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#faq">FAQ</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#contact">Contact Us</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="index.html#apply" style="background-color:#2fa8de; color:#ffffff">Apply now</a> </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
+    <!--/.Navbar mobile-->
+  </head>
+  <body>
+    <div id=""><br></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="text-align:center; padding-bottom:5rem">
+          <h1 style="padding-bottom: 2rem"> The Companies</h1>
+          <div class="batch-title">
+            <a class="batch-name" href="#nycsummer2019">NYC Summer batch 2019</a>
+            <a class="batch-name" href="#autumn2018">Autumn Batch 2018</a>
+            <a class="batch-name" href="#summer2018">Summer Batch 2018</a>
+            <a class="batch-name" href="#spring2019">Spring Batch 2019</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="nycsummer2019">
+      <div class="col-md-12" style="text-align:center; padding-bottom: 2rem">
+        <h3> NYC Summer batch 2019</h3>
+      </div>
+      <div class="mini-ligne" style="margin-bottom: 2rem"></div>
+    </div>
+    <div class="container boxes-wrapper" style="margin-top: 5rem">
+      <div class="row">
+        <div class="col-md-3" style="text-align:center"> <img src="img/adi.jpg">
+          <div class="overlay"> <p>test</p> </div>
+        </div>
+        <div class="col-md-3" style="text-align:center"> <img src="img/alan.jpg"> </div>
+        <div class="col-md-3" style="text-align:center"> <img src="img/allen.jpg"> </div>
+        <div class="col-md-3" style="text-align:center"> <img src="img/pilo.jpg"> </div>
+      </div>
+    </div> -->
+
+
+
+<div id="nycsummer2019">
+  <div class="col-md-12" style="text-align:center; padding-bottom: 2rem">
+    <h3> NYC Summer batch 2019</h3>
+  </div>
+  <div class="wrapper">
+    <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+      <div class="info">
+        <h1>Mountain</h1>
+        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+      </div>
+    </div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+      <div class="info">
+        <h1>Road</h1>
+        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+      </div>
+    </div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&amp;fit=crop&amp;w=311&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+      <div class="info">
+        <h1>Protester</h1>
+        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+      </div>
+    </div>
+  </div>
 </div>
-<!--/.Navbar mobile-->
-  
-</head>
-
-<body>
 
 
 
 
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="root"></div>
 
 
-</body>
 
 
-<!--------------------- FOOTER --------------------->
-<footer style="background-color:#282b39">
 
-  <!-- Copyright -->
-  <div class="col-md-4">
-    <div class="footer-copyright py-4" style="color:#a1b1bc; text-align:center; font-size:16px;">Copyright 2018 <a href="https://www.365x.io/" style="color:#04bfbf">365x.io</a> | All Rights Reserved
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <!--------------------- FOOTER --------------------->
+  <footer style="background-color:#282b39">
+    <!-- Copyright -->
+    <div class="col-md-4">
+      <div class="footer-copyright py-4" style="color:#a1b1bc; text-align:center; font-size:16px;">Copyright 2018 <a href="https://www.365x.io/" style="color:#04bfbf">365x.io</a> | All Rights Reserved
     </div>
   </div>
   <!-- Copyright -->
-
 </footer>
 <!--------------------- /. FOOTER --------------------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
