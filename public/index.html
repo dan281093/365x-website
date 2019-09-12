@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
@@ -12,1061 +14,1028 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../src/index.css">
-
+    <link rel="stylesheet" href="../src/App.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    Notice the use of %PUBLIC_URL% in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>365x</title>
-
-<!-- NAVIGATION -->
-<nav id="computer" class="navbar sticky-top navbar-light bg-light">
-  <a class="navbar-brand" href="#"> <img style="width:120px; height:50px;" src="img/final-logo.png"></a>
-  <a class="navbar-brand" href="#program">The Program</a>
-  <a class="navbar-brand" href="#location">Locations</a>
-  <a class="navbar-brand" href="#joinus">Join Ecosystem</a>
-  <a class="navbar-brand" href="#faq">FAQS</a>
-  <a class="navbar-brand button-apply" href="#apply" style="background-color:#2fa8de; color:#ffffff"> Apply Now</a>
-</nav>
-<!-- /.NAVIGATION -->
-
-<!--Navbar mobile-->
-<div class="mobile">
-  <nav class="navbar light-blue lighten-4">
-    <a class="navbar-brand" href="#"><img style="width:120px; height:50px;" src="img/final-logo.png"></a>
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> ☰</button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-      <ul class="navbar-nav mr-auto">
-       <li class="nav-item active"> <a class="nav-link" href="#program">Program <span class="sr-only">(current)</span></a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#program">The Program</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#location">Locations</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#joinus">Join Ecosystem</a></li>
-       <li class="nav-item"> <a class="nav-link" href="#faq">FAQS</a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#apply" style="background-color:#2fa8de; color:#ffffff">Apply now</a> </li>
-     </ul>
+    <!-- NAVIGATION -->
+    <nav id="computer" class="navbar sticky-top navbar-light bg-light">
+      <div class="navbar-space">
+        <a class="navbar-brand" href="#about">About</a>
+        <a class="navbar-brand" href="#program">The Program</a>
+        <a class="navbar-brand" href="#joinus">Join Ecosystem</a>
+        <a class="navbar-brand" href="#ourstartups">Our Startups</a>
+        <a class="navbar-brand" href="#contact">Contact</a>
+        <a class="navbar-brand" href="#faq">FAQS</a>
+        <a class="navbar-brand button-apply" href="#apply"> Apply Now</a>
+      </div>
+    </nav>
+    <!-- /.NAVIGATION -->
+    <!--Navbar mobile-->
+    <div class="mobile">
+      <nav class="navbar light-blue lighten-4">
+        <a class="navbar-brand" href="#"><img style="width:120px; height:50px;" src="img/final-logo.png"></a>
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> ☰</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <!--  <a class="navbar-brand" href="#"> <img style="width:120px; height:50px;" src="img/final-logo.png"></a> -->
+            <li class="nav-item active"> <a class="nav-link" href="#program">Program <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#program">The Program</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#location">Locations</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#joinus">Join Ecosystem</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#faq">FAQS</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#apply" style="background-color:#2fa8de; color:#ffffff">Apply now</a> </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
-<!--/.Navbar mobile-->
-
-</head>
-<body>
-
-
-<!--------------------- First container with background : Fast Track --------------------->
-<div class="container-fluid">
-
-  <div class="row">
-
-      <img src="img/city.jpeg" style="width:100%; height:700px;">
-
-
-      <div class="col-md-12" style="position:absolute; margin-top:500px; text-align: left;">
-      	<h1 style="color:#ffffff"> Fast Track <br> to Business & Scalability </h1>
-      </div>
-
-      <div class="col-md-12" style="position:absolute; margin-top:550px; text-align: right; ">
-		<a href="#apply"><button type="button" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff;"> Apply now </button>
-		</a>
-      </div>
-      <!--
-      <div class="box">
-           <div class="col-order-first" style="position:absolute; bottom:20px; left:20px;">
-              <h1 style="color:#ffffff"> Fast Track <br>to Business & Scalability </h1>
-           </div>
-
-           <div class="col-order-last" style="position:absolute; padding:0 10px 0 0; right:15px; bottom:28px">
-              <a href="#apply"><button type="button" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff;">Apply now</button></a>
-
-           </div>
-      </div>
-  -->
-  </div>
-</div>
-
-
-<!--------------------- /.First container with background : Fast Track --------------------->
-
-
-
-<!--------------------- 2nd container with background : Our Mission --------------------->
-<div id="program">
-</div>
-<div class="container-fluid">
-
-  <div class="row">
-    <img src="img/work.jpeg" style="width:100%; height:700px;">
-      <div class="col-md-5" style="position:absolute; margin-top:150px; ">
-        <div class="card" style="background-color:rgba(255,255,255,0.8)">
-          <div class="card-body">
-            <h5 class="card-title">Our Mission</h5>
-            <h6 class="card-title">Accelerating Commercialization of Technology Startup Companies</h6>
-            <p class="card-text"> We enhance scalability for your Software or IoT Startup Company. Surrounded by talented Executives and Entrepreneurs, sharpen your business, product and technology, while accessing an international customer and distributors network to affirm solid traction towards scalability. </p>
+    <!--/.Navbar mobile-->
+  </head>
+  <body>
+    <!--------------------- First container with background : Fast Track --------------------->
+    <div class="container-fluid">
+      <div class="row">
+        <div>
+          <img src="img/city.jpeg" style="width:100%; height:500px;">
+          <div class="col-md-5" style="position:absolute; margin-top:-450px; ">
+            <img style="width:320px; height:130px; background: #ffffff26;" src="img/final-logo.png">
+          </div>
+          <div class="col-md-12" style="position:absolute; margin-top:-310px; text-align: left;">
+            <h1 style="color:#ffffff; font-size:3.5rem"> FAST TRACKING YOUR <br> BUSINESS & SCALABILITY </h1>
+          </div>
+          <div class="col-md-12" style="position:absolute; margin-top:-120px; text-align: left; ">
+            <a href="#apply"><button type="button" class="btn button-apply"> Apply now </button></a>
           </div>
         </div>
       </div>
-  </div>
-</div>
-  <!--------------------- /.2nd container with background : Our Mission --------------------->
-
-
-
-<!--------------------- 3th container with blue background : The program  --------------------->
-<div class="container-fluid">
-  <div class="row" style="background-color:#2fa8de;">
-    <div class="box">
-      <div class="col-md-12">
-        <h3 style="color:#ffffff; text-align:center; margin-top:5%">The Program</h3><br>
+      <!--
+      <div class="box">
+        <div class="col-order-first" style="position:absolute; bottom:20px; left:20px;">
+          <h1 style="color:#ffffff"> Fast Track <br>to Business & Scalability </h1>
+        </div>
+        <div class="col-order-last" style="position:absolute; padding:0 10px 0 0; right:15px; bottom:28px">
+          <a href="#apply"><button type="button" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff;">Apply now</button></a>
+        </div>
       </div>
-      <div class="col-md-8 offset-2" style="padding : 0 50px 0 50px">
-        <p style= "color:#ffffff">
-
-        <strong>Six Months Program to Accelerate your Business Performances</strong><br><br>
-
-          Assigned Coach will push you straight to business. Strengthening your strategy and roadmap and structuring your product, technology and organization to work at scale and sustain exponential growth.<br><br>
-          Frequent market feedback, global customer reach and tight support to reach actual business agreements with customers and partners. Generate sales, close reseller partnerships and reach the required traction to fit the criteria of “Series A Round” investment.<br><br>
-          <u><a href="#" style="color:#ffffff">Visit our Startup FAQ</a></u>
-        </p><br>
+      -->
+    </div>
+    <!--------------------- /.First container with background : Fast Track --------------------->
+    <div id="program">
+    </div>
+    <div class="container-fluid">
+      <div class="row photo-grey" style="height:500px;">
+        <img src="img/building1.jpeg" style="width:100%; height:500px;">
+        <h2 class="text-align title-results">365X RESULTS</h2>
+        <div class="wrapper">
+          <div class="counter col-md-4">
+            <h2 class="timer count-title count-number text-align" data-to="54" data-speed="2000"></h2>
+            <p class="count-text text-align">Startups <br> Scaled-up</p>
+          </div>
+          <div class="counter col-md-4">
+            <h2 class="timer count-title count-number text-align" data-to="10" data-speed="2000"></h2>
+            <p class="count-text text-align">Million Dollars <br> Raised</p>
+          </div>
+          <div class="counter col-md-4">
+            <h2 class="timer count-title count-number text-align" data-to="300" data-speed="2000"></h2>
+            <p class="count-text text-align">Mentors & <br> Coaches</p>
+          </div>
+        </div>
+        <div class="col-md-12" style=" text-align: center; top: -60% ">
+          <a href="#"><button type="button" class="btn button-apply" style="width: 25%;"> Meet Our Companies </button></a>
+        </div>
       </div>
-
-      <div class="col-md-12"  style="left:60%;">
-        <a href="#apply"><button type="button" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff; border-color:#ffffff; margin-bottom:5%">Apply now</button></a>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="scripts.js"></script>
+    <!--------------------- 2nd container with background : Our Mission --------------------->
+    <div id="program">
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <img src="img/work.jpeg" style="width:100%; height:700px;">
+        <div class="col-md-5 our-mission">
+          <div class="card-our-mission">
+            <div class="card-body">
+              <h5 class="card-title" style="color: white">Our Mission</h5>
+              <p class="card-text white-color"> We help software and IoT startups achieve exponential, international growth through a strategic 6-month program. </p>
+            </div>
+            <div class="col-md-12" style=" text-align: center; top: -45%; margin-top: 40px; ">
+              <a href="#"><button type="button" class="btn button-apply" style="width: 45%;"> Learn More </button></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!--------------------- /. 3th container with blue background : The program  --------------------->
+    <!--------------------- /.2nd container with background : Our Mission --------------------->
+    <div id="">
+    </div>
+    <div class="container-fluid">
+      <div class="row photo-grey">
+        <img src="img/building2.jpeg" style="width:100%; height:350px;">
+        <div class="col-md-12" style="position: absolute;">
+          <div class="">
+            <div class="card-body text-img text-align">
+              <p class="card-text white-color" style="font-size: 25px;">  “When joining a program like 365x, you don’t necessarily understand the extent of the connections that you will benefit from, but once you start using it, you understand that this is what differentiates between the startups who fail and the startups who accelerate.” </p>
+              <p class="text-align" style="color: white; font-weight: bold">- Yoav Bauman, CEO of Academix, 365x Alumni 2018 -</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" style="background: rgb(33,151,214); background: linear-gradient(90deg, rgba(33,151,214,1) 0%, rgba(74,74,78,1) 100%);">
+        <div class="col-md-3">
+          <h3 style="color:#ffffff; text-align:center; margin-top:5%; font-weight: 700;">The Program</h3><br>
+          <p style= "color:#ffffff; padding : 0 50px 0 50px; font-weight: 700;">
+            The 365x Scale-Up Program is a business enhancer for early- revenue Software and IoT Startup Companies. Alongside Fortune500 Coaches and Mentors, our startups scale-up their business, align with market needs, connect with VC's and investors for A and B fundraising rounds, and engage with targeted customers and distribution channels with the support of our Strategic Partners.<br><br>
+            <u><a href="#" style="color:#ffffff">Visit our Startup FAQ</a></u>
+          </p><br>
+        </div>
+        <div class="col-md-9" style="padding : 0 50px 0 50px">
+          <div class="row">
+            <div class="col-md-6" style="margin-top: 5%;">
+              <div class="center-icon">
+                <img src="../public/icon/meeting.png" alt="meeting.png" style="width: 20%;">
+              </div>
+              <h4 style="height: 35px;">One-to-One Mentoring</h4>
+              <p>Each of our mentors are established professionals in respective fields. We pair between our startups and network of mentors to make for a powerful relationship meant to serve an advisory board for each startup.</p>
+              <div class="center-icon">
+                <img src="../public/icon/class.png" alt="class.png" style="width: 20%;">
+              </div>
+              <h4 style="height: 35px;">Weekly Coaching</h4>
+              <p>After a thorough assessment of our startups’ strengths and weaknesses, our coaches can better understand how to lay the foundation for a scalable growth plan.</p>
+            </div>
+            <div class="col-md-6" style="margin-top: 5%;">
+              <div class="center-icon">
+                <img src="../public/icon/hand-shake.png" alt="hand-shake.png" style="width: 20%;">
+              </div>
+              <h4 style="height: 35px;">Strategic Partnering</h4>
+              <p>Our startups gain exclusive access to our channel partners, including Microsoft, Salesforce, Techdata, and Prodware, to serve as sales channels for future expansion.</p>
+              <div class="center-icon">
+                <img src="../public/icon/worldwide.png" alt="worldwide.png" style="width: 20%;">
+              </div>
+              <h4 style="height: 35px;">Supportive Ecosystem</h4>
+              <p>Our ecosystem provides startups with everything they need to grow. Co-work spaces, two venture capital funds (Sarona Go-USA & Sarona VC Israel), the largest tech media platform in Israel (Geektime), and numerous startup accelerators and scale up programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------- 3th container with blue/grey background : The program  --------------------->
+    <div id="">
+    </div>
+    <div class="container-fluid">
+      <div class="row photo-grey">
+        <img src="img/windows.jpeg" style="width:100%; height:700px;">
+        <div class="col-md-12" style="position: absolute;">
+          <div class="ecosystem-contain">
+            <h2 class="text-align title-eco">The 365x Ecosystem</h2>
+            <div class="card-body ecosystem text-align">
+              <div class="col-md-3">
+                <img src="icon/hand-shake.png" alt="">
+                <p class="text-align" style="font-weight: bold">Partners</p>
+                <p class="card-text" style="font-size: 14px; font-weight: bold"> Connecting Startups with their demonstrated needs, our Strategic Partners reach hundreds of thousands resellers and millions of businesses, providing the strongest position for systematically conquering any market, while our Program Partners help companies with specific internal growth opportunities. </p>
+              </div>
+              <div class="col-md-3">
+                <img src="icon/hand-shake.png" alt="">
+                <p class="text-align" style="font-weight: bold">People</p>
+                <p class="card-text" style="font-size: 14px; font-weight: bold"> Companies work with Coaches, Sales and Business Development executives, and Mentors, world class domain experts in specific fields, in conjunction with our team at 365x to work incredibly closely with companies, helping realize their potential. </p>
+              </div>
+              <div class="col-md-3">
+                <img src="icon/hand-shake.png" alt="">
+                <p class="text-align" style="font-weight: bold">Alumni</p>
+                <p class="card-text" style="font-size: 14px; font-weight: bold"> Excelling in their respective industries, from CyberTech to Retail Tech, our alumni habitually close new deals, grow their businesses, and expand into new international markets after completing up the Scale-Up program. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------- /. 3th container with blue/grey background : The program  --------------------->
+    <!--------------------- 4th container : Strategic Partners blue/white --------------------->
 
 
 
-<!--------------------- 4th container : Strategic Partners --------------------->
-<div id="partners">
-	<br>
-    </div>
-<div class="container">
-  <div class="row">
 
-
-    	<div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
-      	<h3>Strategic Partners</h3>
-    	</div>
-    	<div class="box" style="text-align:left; margin-left:10px; margin-right: 10px;">
-      	<p>Three Global leaders with cumulative reach to hundreds of thousands resellers and millions of businesses. Providing the strongest position for systematically conquering your market.</p><br>
-      	<a href="strategic-partners/">Read More…</a>
-    	</div>
-  </div>
-  <div class="row" style="text-align: center;">
-    <div class="col-md-3" style="padding:3%">
-    <a href="https://startups.microsoft.com/en-us/" target="_blank"><img src="img/microsoft.png" style="width:250px; height:100px;"></a><br><br>
-    ★ World largest provider of business software
+    <div class="container-fluid background-half" id="partners">
+      <div class="row">
+        <div class="col-md-4" style="text-align:center; padding-top:5%; padding-bottom:2%; margin-bottom: 10%;">
+          <h3 style="color: white; font-weight: 700">Strategic Partners</h3>
+          <div class="box" style="text-align:left; margin-left:10px; margin-right: 10px; color: white;
+          font-weight: 700;">
+            <p>Our strategic partners are innovative, international leaders who act as global sales channels for our startups.</p><br>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row" style="text-align: center;">
+            <div class="col-md-6" style="padding:3%">
+              <a href="https://startups.microsoft.com/en-us/" target="_blank"><img src="img/microsoft.png" style="width:250px; height:100px;"></a><br><br>
+              ★ World largest provider of business software
+            </div>
+            <div class="col-md-6" style="padding:3%;">
+              <a href="http://www.prodware-group.com/en" target="_blank"><img src="img/prodware.png" style="width:75%; height:100px;"></a><br><br>
+              ★ Global software vendor and Integrator
+            </div>
+          </div>
+          <div class="row" style="text-align: center;">
+            <div class="col-md-6" style="padding:3%">
+              <a href="https://www.techdata.com/" target="_blank"><img src="img/techdata.jpg" style="width:250px; height:100px;"></a><br><br>
+              ★ 43 years in IT distribution #107 on the Fortune 500
+            </div>
+            <div class="col-md-6" style="padding:3%">
+              <a href="https://www.salesforce.com/eu/?ir=1" target="_blank"><img src="img/salesforce.png" style="width:50%; height:100px;"></a><br><br>
+              ★ World first Saas company & #1 CRM globally
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3" style="padding:3%;">
-    <a href="http://www.prodware-group.com/en" target="_blank"><img src="img/prodware.png" style="width:280px; height:100px;"></a><br><br>
-    ★ Global software vendor and Integrator
-    </div>
-    <div class="col-md-3" style="padding:3%">
-    <a href="https://www.techdata.com/" target="_blank"><img src="img/techdata.jpg" style="width:250px; height:100px;"></a><br><br>
-    ★ 43 years in IT distribution #107 on the Fortune 500
-    </div>
-    <div class="col-md-3" style="padding:3%">
-    <a href="https://www.salesforce.com/eu/?ir=1" target="_blank"><img src="img/salesforce.png" style="width:250px; height:100px;"></a><br><br>
-    ★ World first Saas company & #1 CRM globally
-    </div>
-  </div>
-
-</div>
-<!--------------------- /.4th container : Strategic Partners --------------------->
 
 
 
-<!--------------------- 5th container : Corporate & Program Partners --------------------->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
-      <h3>Corporate & Program Partners</h3>
-      <p style="text-align:left; font-size:19px;">Qualified <b> Service Providers </b> supporting and assisting the companies in the <b> fields of business, finance, marketing, product and technology.</b> Providing strong knowhow and exclusive benefits</p>
-    </div>
-  </div>
 
-  <!-- 1st line row picture-->
-  <div class="row" style="text-align: center">
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.bdo.global/en-gb/home" target="_blank"><img src="img/ay-bdo-logo.png" style="max-width:130%;"></a><br><br>
+    <!--------------------- /.4th container : Strategic Partners blue/white --------------------->
+    <!--------------------- 5th container : Corporate & Program Partners --------------------->
+    <div class="container-fluid background-blue-grey">
+      <div class="row">
+        <div class="col-md-3" style="text-align:center; padding-top:5%; padding-bottom:2%; margin: auto;">
+          <h3 style=" font-weight: 700; color: white; margin-bottom: 10%;">Program Partners</h3>
+          <p style="text-align:left; font-size:19px;  font-weight: 700; color: white">The 365x program partners receive exclusivity when joining our ecosystem. Each partner supports our startups in respective fields of business, finance, marketing, product, and technology</p>
+        </div>
+        <div class="col-md-5 list-item">
+          <ul>
+            <li>
+              <h5 onclick="openDiv()">Adecco</h5>
+              <p id="myDIV">test</p>
+            </li>
+            <li>
+              <h5 onclick="openDiv1()">Inbound Junction</h5>
+              <p id="myDIV1">test</p>
+            </li>
+            <li>
+              <h5 onclick="openDiv2()">Think Future Technologies</h5>
+              <p id="myDIV2">test</p>
+            </li>
+            <li>
+              <h5 onclick="openDiv3()">Yehudayoff</h5>
+              <p id="myDIV3">test</p>
+            </li>
+            <li>
+              <h5 onclick="openDiv4()">Dialog</h5>
+              <p id="myDIV4">test</p>
+            </li>
+            <li>
+              <h5 onclick="openDiv5()">Shekel Group</h5>
+              <p id="myDIV5">test</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img src="" alt="">
+        </div>
+      </div>
     </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="http://www.sarona.vc/" target="_blank"><img src="img/sarona.png" style="max-width:130%" height: 80px></a><br><br>
+      <!-- 1st line row picture-->
+      <div class="row" style="display: flex; align-items: center; margin-right: 3px;">
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.bdo.global/en-gb/home" target="_blank"><img src="img/ay-bdo-logo.png" style="max-width:130%;"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="http://www.sarona.vc/" target="_blank"><img src="img/sarona.png" style="max-width:130%" height: 80px></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.dialog.co.il/" target="_blank"><img src="img/dialog.jpg" style="max-width:130%; height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://inboundjunction.com/" target="_blank"><img src="img/inbound.png" style="max-width:130%" height: 80px></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.bakertilly.co.il/" target="_blank"><img src="img/baker.jpg" style="max-width:130%; height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.pearlcohen.com/" target="_blank"><img src="img/pearl.jpg" style="max-width:130%; height: 80px"></a><br><br>
+        </div>
+      </div>
+      <!-- 2nd picture row -->
+      <div class="row" style="display: flex; align-items: center; margin-right: 3px;">
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="http://www.shekelgroup.co.il/pages/8.aspx" target="_blank"><img src="img/shekel.jpeg" style="max-width:110%; height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.tftus.com/" target="_blank"><img src="img/tft.png" style="max-width:110%; height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.geektime.co.il/" target="_blank"><img src="img/geektime.png" style="max-width:110%; height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.bee-creations.com/" target="_blank"><img src="img/bee.jpg" style="max-width:110%; height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.datasite.co.il/" target="_blank"><img src="img/datasite.png" style="max-width:120%;"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.letsdeel.com/" target="_blank"><img src="img/deel.png" style="max-width:120%;"></a><br><br>
+        </div>
+      </div>
+      <!-- 3th picture row -->
+      <div class="row" style="display: flex; align-items: center; margin-right: 3px;">
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="http://saronaspace.com/" target="_blank"><img src="img/sarona2.png" style="max-width:110%; height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="http://www.sunrise.co.il/" target="_blank"><img src="img/sunrise.png" style="max-width:120%; max-height: 80px"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="http://adecco.co.il/" target="_blank"><img src="img/adecco.png" style="max-width:110%;"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://www.thelocalstay.com/" target="_blank"><img src="img/local-stay.png" style="max-width:120%;"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://theyard.com/" target="_blank"><img src="img/yard.png" style="max-width:120%;"></a><br><br>
+        </div>
+        <div class="col-md-2 center-img" style="padding:3%">
+          <a href="https://donnagriffit.com/" target="_blank"><img src="img/donna.jpg" style="max-width:120%;"></a><br><br>
+        </div>
+      </div>
     </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.dialog.co.il/" target="_blank"><img src="img/dialog.jpg" style="max-width:130%; height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://inboundjunction.com/" target="_blank"><img src="img/inbound.png" style="max-width:130%" height: 80px></a><br><br>
-    </div>
-   <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.bakertilly.co.il/" target="_blank"><img src="img/baker.jpg" style="max-width:130%; height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.pearlcohen.com/" target="_blank"><img src="img/pearl.jpg" style="max-width:130%; height: 80px"></a><br><br>
-    </div>
-
-  </div>
-
-  <!-- 2nd picture row -->
-  <div class="row" style="text-align: center">
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="http://www.shekelgroup.co.il/pages/8.aspx" target="_blank"><img src="img/shekel.jpeg" style="max-width:110%; height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.tftus.com/" target="_blank"><img src="img/tft.png" style="max-width:110%; height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.geektime.co.il/" target="_blank"><img src="img/geektime.png" style="max-width:110%; height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.bee-creations.com/" target="_blank"><img src="img/bee.jpg" style="max-width:110%; height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.datasite.co.il/" target="_blank"><img src="img/datasite.png" style="max-width:120%;"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.letsdeel.com/" target="_blank"><img src="img/deel.png" style="max-width:120%;"></a><br><br>
-    </div>
-  </div>
-
-
-  <!-- 3th picture row -->
-  <div class="row" style="text-align: center">
-     <div class="col-md-2 center-img" style="padding:3%">
-    <a href="http://saronaspace.com/" target="_blank"><img src="img/sarona2.png" style="max-width:110%; height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="http://www.sunrise.co.il/" target="_blank"><img src="img/sunrise.png" style="max-width:120%; max-height: 80px"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="http://adecco.co.il/" target="_blank"><img src="img/adecco.png" style="max-width:110%;"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://www.thelocalstay.com/" target="_blank"><img src="img/local-stay.png" style="max-width:120%;"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://theyard.com/" target="_blank"><img src="img/yard.png" style="max-width:120%;"></a><br><br>
-    </div>
-    <div class="col-md-2 center-img" style="padding:3%">
-    <a href="https://donnagriffit.com/" target="_blank"><img src="img/donna.jpg" style="max-width:120%;"></a><br><br>
-    </div>
-  </div>
-
-  </div>
-<!--------------------- /. 5th container : Corporate & Program Partners --------------------->
-
-
-
-<!--------------------- 6th container : The locations --------------------->
-
-<div class="container-fluid">
-<div id="location"><br><br><br></div>
-  <div class="row">
-
-    <div class="col-md-12" style="text-align:center; margin-bottom:15px;">
-      <h3>The Locations</h3><br>
-    </div>
-  </div>
-
-  <div class="row">
-
-  	<div class="col-md-6">
-    	<img src="img/cfar-saba-office.jpeg" style="width:100%; height:509px;">
-	</div>
-  <div class="col-md-6">
-      <img src="img/ny-office.jpg" style="width:100%; height:509px;">
-  </div>
-
-    <div class="col-md-6 up" style="position:absolute; left:0px; ">
-      <div class="card card-mobile" style="background-color:rgba(255,255,255,0.8);">
-        <div class="card-body">
-          <h4 class="card-title">Kfar Saba</h4>
-          <p class="card-text">
+    <!--------------------- /. 5th container : Corporate & Program Partners --------------------->
+    <!--------------------- 6th container : The locations --------------------->
+    <div class="container-fluid">
+      <div id="location"><br><br><br></div>
+      <div class="row">
+        <div class="col-md-12" style="text-align:center; margin-bottom:15px;">
+          <h3>The Locations</h3><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/cfar-saba-office.jpeg" style="width:100%; height:509px;">
+        </div>
+        <div class="col-md-6">
+          <img src="img/ny-office.jpg" style="width:100%; height:509px;">
+        </div>
+        <div class="col-md-6 up" style="position:absolute; left:0px; ">
+          <div class="card card-mobile" style="background-color:rgba(255,255,255,0.8);">
+            <div class="card-body">
+              <h4 class="card-title">Kfar Saba</h4>
+              <p class="card-text">
                 Located in Green Kfar-Saba few meters away from the Headquarters of our Strategic Partners, 365x is part of the thriving ecosystem of Sarona Space attracting tech leaders, corporate senior managements and founders relentlessly building the tools of tomorrow.
-          </p>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 down" style="position:absolute; right:0px; ">
-      <div class="card card-mobile" style="background-color:rgba(255,255,255,0.8);">
-        <div class="card-body">
-          <h4 class="card-title">New York</h4>
-            <p class="card-text">
+        <div class="col-md-6 down" style="position:absolute; right:0px; ">
+          <div class="card card-mobile" style="background-color:rgba(255,255,255,0.8);">
+            <div class="card-body">
+              <h4 class="card-title">New York</h4>
+              <p class="card-text">
                 In the heart of the big apple, 365x enables Israeli companies to scale in one of the most vibrant startup ecosystems. Surrounded by leading global corporates 365x provides access to sector leaders and opportunities in your targeted market. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </p>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
-</div>
-<!--------------------- /. 6th container : The locations --------------------->
-
-
-
-<!--------------------- / 7th container : Coaches text --------------------->
-<div id="people"><br></div>
-<div class="container">
-  <div class="row">
-
-    <div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
-      <h3> Coaches</h3>
-      <p style="text-align:left; font-size:19px;"><strong>The Coaches at 365x are Sales and Business Development phenomenons.</strong> Senior Executives or Serial Entrepreneurs with tremendous business achievements, inject maturity and professionalism to your company to assure that you operate and deliver on an international corporate level standards!</p>
+    <!--------------------- /. 6th container : The locations --------------------->
+    <!--------------------- / 7th container : Coaches text --------------------->
+    <div id="people"><br></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
+          <h3> Coaches</h3>
+          <p style="text-align:left; font-size:19px;">With decades in the Sales and Business Development fields, The Coaches are Senior Executives or Serial Entrepreneurs with tremendous business achievements.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<!--------------------- /. 7th container : Coaches text --------------------->
-
-
-
-<!--------------------- / 8th container : Coaches pictures --------------------->
-<div class="container boxes-wrapper">
-  <div class="row">
-    <div class="col-md-3" style="text-align:center;">
-      <img src="img/gurrola.jpg">
+    <!--------------------- /. 7th container : Coaches text --------------------->
+    <!--------------------- / 8th container : Coaches pictures --------------------->
+    <div class="container boxes-wrapper">
+      <div class="row">
+        <div class="col-md-3" style="text-align:center;">
+          <img src="img/gurrola.jpg">
+        </div>
+        <div class="col-md-3" style="text-align:center">
+          <img src="img/zelazny.jpg">
+        </div>
+        <div class="col-md-3" style="text-align:center">
+          <img src="img/pascal-murciano.jpg">
+        </div>
+        <div class="col-md-3" style="text-align:center">
+          <img src="img/golan-bar.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3" style="text-align:center">
+          <img src="img/olivier-elbaz.jpg">
+        </div>
+        <div class="col-md-3" style="text-align:center">
+          <img src="img/delamarre.jpg">
+        </div>
+        <div class="col-md-3" style="text-align:center">
+          <img src="img/conrad.jpg">
+        </div>
+        <div class="col-md-3" style="text-align:center">
+          <img src="img/cohen.jpg">
+        </div>
+      </div>
     </div>
-    <div class="col-md-3" style="text-align:center">
-      <img src="img/zelazny.jpg">
-    </div>
-     <div class="col-md-3" style="text-align:center">
-      <img src="img/pascal-murciano.jpg">
-    </div>
-    <div class="col-md-3" style="text-align:center">
-      <img src="img/golan-bar.jpg">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3" style="text-align:center">
-      <img src="img/olivier-elbaz.jpg">
-    </div>
-    <div class="col-md-3" style="text-align:center">
-      <img src="img/delamarre.jpg">
-    </div>
-    <div class="col-md-3" style="text-align:center">
-      <img src="img/conrad.jpg">
-    </div>
-    <div class="col-md-3" style="text-align:center">
-      <img src="img/cohen.jpg">
-    </div>
-  </div>
-</div>
-
-<!--------------------- /. 8th container : Coaches pictures --------------------->
-
-
-
-<!--------------------- / 9th container : Coaches pictures with show more/show less button--------------------->
-
-<span id="more">
-  <div class="container boxes-wrapper">
-
-    <div class="row">
-      <div class="col-md-3" style="text-align:center"> <img src="img/adi.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/alan.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/allen.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/pilo.jpg"> </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3" style="text-align:center"> <img src="img/nissimov.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/abitbol.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/daniel.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/margalit.jpg"> </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3" style="text-align:center"> <img src="img/eduardo.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/tocker.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/hattem.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/gil-ad.jpg"> </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3" style="text-align:center"> <img src="img/danon.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/henry.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/herlevsen.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/amit.jpg"> </div>    </div>
-
-    <div class="row">
-      <div class="col-md-3" style="text-align:center"> <img src="img/kahana.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/sanchez.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/fratty.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/benero.jpg"> </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3" style="text-align:center"> <img src="img/gideon.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/ezekiel.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/benoulou.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/p-bouaziz.jpg"> </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3" style="text-align:center"> <img src="img/hearn.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/brimm.jpg"> </div>
-      <div class="col-md-3" style="text-align:center"> <img src="img/verdiger.jpg"> </div>
-    </div>
-
-  </div>
-</span>
-
-<div class="row">
-    <div class="col-md-12" style="text-align:center">
-    <button type="button" id="read" onclick="read()" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff; border-color:#ffffff; margin-bottom:10%"> Read more</button>
-    </div>
-</div>
-<!--------------------- /. 9th container : Coaches pictures with show more/show less button--------------------->
-
-
-
-<!--------------------- script show more/show less button --------------------->
-<script type="text/javascript">
-
+    <!--------------------- /. 8th container : Coaches pictures --------------------->
+    <!--------------------- / 9th container : Coaches pictures with show more/show less button--------------------->
+    <span id="more">
+      <div class="container boxes-wrapper">
+        <div class="row">
+          <div class="col-md-3" style="text-align:center"> <img src="img/adi.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/alan.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/allen.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/pilo.jpg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3" style="text-align:center"> <img src="img/nissimov.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/abitbol.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/daniel.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/margalit.jpg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3" style="text-align:center"> <img src="img/eduardo.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/tocker.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/hattem.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/gil-ad.jpg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3" style="text-align:center"> <img src="img/danon.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/henry.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/herlevsen.jpg"> </div>
+          <div class="col-md-3" style="text-align:center"> <img src="img/amit.jpg"> </div>    </div>
+          <div class="row">
+            <div class="col-md-3" style="text-align:center"> <img src="img/kahana.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/sanchez.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/fratty.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/benero.jpg"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3" style="text-align:center"> <img src="img/gideon.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/ezekiel.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/benoulou.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/p-bouaziz.jpg"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3" style="text-align:center"> <img src="img/hearn.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/brimm.jpg"> </div>
+            <div class="col-md-3" style="text-align:center"> <img src="img/verdiger.jpg"> </div>
+          </div>
+        </div>
+      </span>
+      <div class="row">
+        <div class="col-md-12" style="text-align:center">
+          <button type="button" id="read" onclick="read()" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff; border-color:#ffffff; margin-bottom:10%"> Read more</button>
+        </div>
+      </div>
+      <!--------------------- /. 9th container : Coaches pictures with show more/show less button--------------------->
+      <!--------------------- script show more/show less button --------------------->
+      <script type="text/javascript">
       var i=0;
       function read(){
-        if (!i){
-          document.getElementById("more").style.display = "inline";
-          document.getElementById("read").innerHTML="Read less";
-          i=1;
-        }
-        else {
-          document.getElementById("more").style.display = "none";
-          document.getElementById("read").innerHTML="Read more";
-          i=0;
-        }
+      if (!i){
+      document.getElementById("more").style.display = "inline";
+      document.getElementById("read").innerHTML="Read less";
+      i=1;
       }
-</script>
-<!--------------------- /. script show more/show less button --------------------->
-
-
-
-<!--------------------- 10th container : Mentors text --------------------->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
-      <h3> Mentors</h3>
-      <p style="text-align:left; font-size:19px;">World class domain experts are available to level up the backbones of your company: processes, materials, offering, strategy and execution to seamlessly engage with giant enterprise accounts. From sales, marketing, product and technology up to legal, finance and strategy, covering every single aspect of your journey to scale.</p>
-    </div>
-  </div>
-</div>
-<!--------------------- /. 10th container : Mentors text --------------------->
-
-
-
-<!--------------------- 11th container : Mentors pictures --------------------->
-<div class="container boxes-wrapper">
-  <!-- 1ere ligne -->
-  <div class="row">
-    <div class="col-md-3">
-      <img src="img/benjamin.jpg">
-    </div>
-    <div class="col-md-3">
-      <img src="img/sebbag.jpg">
-    </div>
-    <div class="col-md-3">
-      <img src="img/hod.jpg">
-    </div>
-    <div class="col-md-3">
-      <img src="img/schaettgen.jpg">
-    </div>
-  </div>
-    <!-- 2eme ligne -->
-  <div class="row">
-    <div class="col-md-3">
-      <img src="img/hochman.jpg">
-    </div>
-
-    <div class="col-md-3">
-      <img src="img/ziv.jpg">
-    </div>
-
-    <div class="col-md-3">
-      <img src="img/vachner.jpg">
-    </div>
-
-    <div class="col-md-3">
-      <img src="img/greenbaum.jpg">
-    </div>
-  </div>
-
-    <!-- 3eme ligne -->
-  <div class="row">
-    <div class="col-md-3">
-      <img src="img/bendaud.jpg">
-    </div>
-
-    <div class="col-md-3">
-      <img src="img/carmeli.jpg">
-    </div>
-
-    <div class="col-md-3">
-      <img src="img/galena.jpg">
-    </div>
-
-    <div class="col-md-3">
-      <img src="img/breakstone.jpg">
-    </div>
-  </div>
-</div>
-<!--------------------- /. 11th container : Mentors pictures --------------------->
-
-
-
-<!--------------------- 11th container : Mentors pictures with show more/show less button --------------------->
-<span id="more1">
-  <div class="container boxes-wrapper">
-
-    <div class="row">
-      <div class="col-md-3">
-       <img src="img/springer.jpg">
-      </div>
-      <div class="col-md-3">
-       <img src="img/zilberman.jpg">
-      </div>
-      <div class="col-md-3">
-       <img src="img/zwickel.jpg">
-      </div>
-      <div class="col-md-3">
-       <img src="img/elbee.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-       <img src="img/messing.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/baer.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/rotem.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/gilboa.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/ofer.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/zipori.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/poleg.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/d-franck.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/gelman.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/gindis.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/moscati.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/scarvalone.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/carlough.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/kanaan.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/d-bar.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/sofer.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/spector.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/horwitz.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/tropper.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/kadouch.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/streichman.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/lahav.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/edelstein.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/bar-zvi.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/goldzand.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/vardi.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/regensburger.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/gilon.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/ben-artzy.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/madar.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/philosoph.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/tessler.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/dray.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/stechkin.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/yehudayoff.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/blechman.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/buchan.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/botbol.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/rutt.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/langman.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/berliner.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/saterman.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/burns.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/amitai.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/salmanson.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/l-sion.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/zigel.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/avihanan.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/haber.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/dreymann.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/netzer.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/shorer.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/o-simon.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/sher.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/yarkowich.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/ben-shabat.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/magnezy.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/luzia.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/o-tal.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/bi.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/pekin.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/zarfati.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/zikavashvili.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/ben-david.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/kristal.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/oren.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/grenier.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/kaish.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/livne.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/golan.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/b-tur.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/elstein.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/segev.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/hopkins.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/dagan.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/yechiam.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/etl.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/rubin.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/vinitski.jpg">
-      </div>
-      <div class="col-md-3">
-        <img src="img/benchimol.jpg">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/torres.jpg">
-      </div>
-    </div>
-
-  </div>
-</span>
-
-<div class="row">
-  <div class="col-md-12" style="text-align:center">
-      <button type="button" id="read1" onclick="read1()" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff; border-color:#ffffff; margin-bottom:10%"> Read more</button>
-  </div>
-</div>
-<!--------------------- /. 11th container : Mentors pictures with show more/show less button --------------------->
-
-
-
-<!--------------------- script show more/show less button --------------------->
-    <script type="text/javascript">
+      else {
+      document.getElementById("more").style.display = "none";
+      document.getElementById("read").innerHTML="Read more";
+      i=0;
+      }
+      }
+      </script>
+      <!--------------------- /. script show more/show less button --------------------->
+      <!--------------------- 10th container : Mentors text --------------------->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
+            <h3> Mentors</h3>
+            <p style="text-align:left; font-size:19px;">World class domain experts are available to level up the backbones of your company: processes, materials, offering, strategy and execution to seamlessly engage with giant enterprise accounts. From sales, marketing, product and technology up to legal, finance and strategy, covering every single aspect of your journey to scale.</p>
+          </div>
+        </div>
+      </div>
+      <!--------------------- /. 10th container : Mentors text --------------------->
+      <!--------------------- 11th container : Mentors pictures --------------------->
+      <div class="container boxes-wrapper">
+        <!-- 1ere ligne -->
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/benjamin.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/sebbag.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/hod.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/schaettgen.jpg">
+          </div>
+        </div>
+        <!-- 2eme ligne -->
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/hochman.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/ziv.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/vachner.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/greenbaum.jpg">
+          </div>
+        </div>
+        <!-- 3eme ligne -->
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/bendaud.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/carmeli.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/galena.jpg">
+          </div>
+          <div class="col-md-3">
+            <img src="img/breakstone.jpg">
+          </div>
+        </div>
+      </div>
+      <!--------------------- /. 11th container : Mentors pictures --------------------->
+      <!--------------------- 11th container : Mentors pictures with show more/show less button --------------------->
+      <span id="more1">
+        <div class="container boxes-wrapper">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/springer.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/zilberman.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/zwickel.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/elbee.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/messing.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/baer.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/rotem.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/gilboa.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/ofer.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/zipori.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/poleg.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/d-franck.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/gelman.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/gindis.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/moscati.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/scarvalone.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/carlough.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/kanaan.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/d-bar.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/sofer.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/spector.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/horwitz.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/tropper.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/kadouch.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/streichman.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/lahav.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/edelstein.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/bar-zvi.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/goldzand.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/vardi.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/regensburger.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/gilon.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/ben-artzy.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/madar.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/philosoph.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/tessler.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/dray.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/stechkin.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/yehudayoff.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/blechman.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/buchan.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/botbol.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/rutt.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/langman.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/berliner.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/saterman.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/burns.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/amitai.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/salmanson.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/l-sion.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/zigel.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/avihanan.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/haber.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/dreymann.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/netzer.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/shorer.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/o-simon.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/sher.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/yarkowich.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/ben-shabat.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/magnezy.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/luzia.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/o-tal.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/bi.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/pekin.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/zarfati.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/zikavashvili.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/ben-david.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/kristal.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/oren.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/grenier.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/kaish.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/livne.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/golan.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/b-tur.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/elstein.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/segev.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/hopkins.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/dagan.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/yechiam.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/etl.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/rubin.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/vinitski.jpg">
+            </div>
+            <div class="col-md-3">
+              <img src="img/benchimol.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/torres.jpg">
+            </div>
+          </div>
+        </div>
+      </span>
+      <div class="row">
+        <div class="col-md-12" style="text-align:center">
+          <button type="button" id="read1" onclick="read1()" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff; border-color:#ffffff; margin-bottom:10%"> Read more</button>
+        </div>
+      </div>
+      <!--------------------- /. 11th container : Mentors pictures with show more/show less button --------------------->
+      <!--------------------- script show more/show less button --------------------->
+      <script type="text/javascript">
       var i=0;
       function read1(){
-        if (!i){
-          document.getElementById("more1").style.display = "inline";
-          document.getElementById("read1").innerHTML="Read less";
-          i=1;
-        }
-        else {
-          document.getElementById("more1").style.display = "none";
-          document.getElementById("read1").innerHTML="Read more";
-          i=0;
-        }
+      if (!i){
+      document.getElementById("more1").style.display = "inline";
+      document.getElementById("read1").innerHTML="Read less";
+      i=1;
       }
-    </script>
-<!--------------------- /. script show more/show less button --------------------->
-
-
-
-<!--------------------- 12th container : The team with pictures --------------------->
-<div class="container boxes-wrapper">
-
-  <div class="row">
-    <div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
-      <h3> The team</h3>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3"> <img src="img/bouaziz.jpg"> </div>
-    <div class="col-md-3"> <img src="img/shani.jpg"> </div>
-    <div class="col-md-3"> <img src="img/debash.jpg"> </div>
-    <div class="col-md-3"> <img src="img/yossi.jpg"> </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3"> <img src="img/gilad.jpg"> </div>
-    <div class="col-md-3"> <img src="img/alain.jpg"> </div>
-    <div class="col-md-3"> <img src="img/morris.jpg"> </div>
-    <div class="col-md-3"> <img src="img/liron.jpg"> </div>
-  </div>
-  <div class="row" style="padding:0 0 50px 0">
-    <div class="col-md-3"> <img src="img/sion.jpg"> </div>
-    <div class="col-md-3"> <img src="img/jordan.jpg"> </div>
-     <div class="col-md-3"> <img src="img/idan.jpg"> </div>
-    <div class="col-md-3"> <img src="img/ortal.jpg"> </div>
-    <div class="col-md-3"> <img src="img/laurent.jpg"> </div>
-  </div>
-</div>
-<!--------------------- /. 12th container : The team with pictures --------------------->
-
-
-
-<!--------------------- 13th container : Criteria with blue background --------------------->
-<div class="container-fluid">
-  <div class="row" style="background-color:#2fa8de; padding-bottom:10%;">
-      <div class="col-md-12">
-        <h3 style="color:#ffffff; text-align:center; padding-top:7%; font-size:42px; padding-bottom:5%";>Criteria</h3><br>
+      else {
+      document.getElementById("more1").style.display = "none";
+      document.getElementById("read1").innerHTML="Read more";
+      i=0;
+      }
+      }
+      </script>
+      <!--------------------- /. script show more/show less button --------------------->
+      <!--------------------- 12th container : The team with pictures --------------------->
+      <div class="container boxes-wrapper">
+        <div class="row">
+          <div class="col-md-12" style="text-align:center; padding-top:5%; padding-bottom:2%">
+            <h3> The team</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"> <img src="img/bouaziz.jpg"> </div>
+          <div class="col-md-3"> <img src="img/shani.jpg"> </div>
+          <div class="col-md-3"> <img src="img/debash.jpg"> </div>
+          <div class="col-md-3"> <img src="img/yossi.jpg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"> <img src="img/gilad.jpg"> </div>
+          <div class="col-md-3"> <img src="img/alain.jpg"> </div>
+          <div class="col-md-3"> <img src="img/morris.jpg"> </div>
+          <div class="col-md-3"> <img src="img/liron.jpg"> </div>
+        </div>
+        <div class="row" style="padding:0 0 50px 0">
+          <div class="col-md-3"> <img src="img/sion.jpg"> </div>
+          <div class="col-md-3"> <img src="img/jordan.jpg"> </div>
+          <div class="col-md-3"> <img src="img/idan.jpg"> </div>
+          <div class="col-md-3"> <img src="img/ortal.jpg"> </div>
+          <div class="col-md-3"> <img src="img/laurent.jpg"> </div>
+        </div>
       </div>
-
+      <!--------------------- /. 12th container : The team with pictures --------------------->
+      <!--------------------- 13th container : Criteria with blue background --------------------->
+      <div class="container-fluid">
+        <div class="row" style="background-color:#2fa8de; padding-bottom:10%;">
+          <div class="col-md-12">
+            <h3 style="color:#ffffff; text-align:center; padding-top:7%; font-size:42px; padding-bottom:5%";>Criteria</h3><br>
+          </div>
+          <div class="col-md-4">
+            <h4 style="text-align:center;color:#ffffff; font-size:32px;"> Product </h4>
+            <p style="text-align:center;color:#ffffff;  font-size:20px;">Software Based or IoT Product</p>
+          </div>
+          <div class="col-md-4">
+            <h4 style="text-align:center;color:#ffffff; font-size:32px;"> Innovation </h4>
+            <p style="text-align:center;color:#ffffff; font-size:20px;">Disruptive Innovation or Cutting-Edge Technology</p>
+          </div>
+          <div class="col-md-4">
+            <h4 style="text-align:center;color:#ffffff; font-size:32px;"> Traction </h4>
+            <p style="text-align:center;color:#ffffff; font-size:20px;">Live Product with Initial Traction (Pilots or Customers)</p>
+          </div>
+        </div>
+      </div>
+      <!--------------------- /. 13th container : Criteria with blue background --------------------->
+      <!--------------------- 14th container : Apply Form --------------------->
+      <div class="container">
+        <div id="apply"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 style="text-align:center; padding:10% 0 5% 0"> Apply </h3>
+            <p style="text-align:left; padding: 0 15% 0 15%"><strong>Fill up your company information to get access to our
+            Application Form.</strong><br>Invitation to Apply and further instructions will be sent to you by email.</p>
+            <form style="padding:5% 15% 0 15%">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputCompany">Company Name (required)</label>
+                  <input type="text" class="form-control" id="inputCompany" placeholder="">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputWeb">Company website (required)</label>
+                  <input type="text" class="form-control" id="inputWeb" placeholder="">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputName">Main Contact (required)</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputEmail">Main Contact Email (required)</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputNumber">Main Contact Phone Number (required)</label>
+                  <input type="tel" class="form-control" id="inputNumber">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff; border-color:#ffffff; margin-bottom:5%">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--------------------- /. 14th container : Apply Form --------------------->
+      <!--------------------- 15th container : Contact Us --------------------->
+      <div class="container" style="padding-bottom:10%">
+        <div id="contact"></div>
+        <div class="row" style="padding-top:10%">
+          <div class="col-md-12" style="padding-bottom:7%">
+            <h3 style="text-align: center">Contact Us</h3>
+          </div>
+          <div class="col-md-3" style="text-align:center; padding:10px 50px 0 50px">
+            <p>Startups</p>
+            <a href="mailto:startups@365x.io">startups@365x.io</a>
+          </div>
+          <div class="col-md-3" style="text-align:center; padding:10px 0 0 0">
+            <p>Corporates</p>
+            <a href="mailto:corporates@365x.io">corporates@365x.io</a>
+          </div>
+          <div class="col-md-3" style="text-align:center; padding:10px 0 0 0">
+            <p>Investors</p>
+            <a href="mailto:investors@365x.io">investors@365x.io</a>
+          </div>
+          <div class="col-md-3" style="text-align:center; padding:10px 50px 0 50px">
+            <p>Other Partnerships</p>
+            <a href="mailto:partners@365x.io">partners@365x.io</a>
+          </div>
+        </div>
+      </div>
+      <!--------------------- /. 15th container : Contact Us --------------------->
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+    </body>
+    <!--------------------- FOOTER --------------------->
+    <footer style="background-color:#282b39">
+      <!-- Copyright -->
       <div class="col-md-4">
-        <h4 style="text-align:center;color:#ffffff; font-size:32px;"> Product </h4>
-        <p style="text-align:center;color:#ffffff;  font-size:20px;">Software Based or IoT Product</p>
+        <div class="footer-copyright py-4" style="color:#a1b1bc; text-align:center; font-size:16px;">Copyright 2018 <a href="https://www.365x.io/" style="color:#04bfbf">365x.io</a> | All Rights Reserved
       </div>
-
-      <div class="col-md-4">
-        <h4 style="text-align:center;color:#ffffff; font-size:32px;"> Innovation </h4>
-        <p style="text-align:center;color:#ffffff; font-size:20px;">Disruptive Innovation or Cutting-Edge Technology</p>
-      </div>
-
-      <div class="col-md-4">
-        <h4 style="text-align:center;color:#ffffff; font-size:32px;"> Traction </h4>
-        <p style="text-align:center;color:#ffffff; font-size:20px;">Live Product with Initial Traction (Pilots or Customers)</p>
-      </div>
-  </div>
-</div>
-<!--------------------- /. 13th container : Criteria with blue background --------------------->
-
-
-
-<!--------------------- 14th container : Apply Form --------------------->
-<div class="container">
-  <div id="apply"></div>
-  <div class="row">
-    <div class="col-md-12">
-              <h3 style="text-align:center; padding:10% 0 5% 0"> Apply </h3>
-
-              <p style="text-align:left; padding: 0 15% 0 15%"><strong>Fill up your company information to get access to our
-                Application Form.</strong><br>Invitation to Apply and further instructions will be sent to you by email.</p>
-
-              <form style="padding:5% 15% 0 15%">
-
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label for="inputCompany">Company Name (required)</label>
-                    <input type="text" class="form-control" id="inputCompany" placeholder="">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label for="inputWeb">Company website (required)</label>
-                    <input type="text" class="form-control" id="inputWeb" placeholder="">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label for="inputName">Main Contact (required)</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label for="inputEmail">Main Contact Email (required)</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label for="inputNumber">Main Contact Phone Number (required)</label>
-                    <input type="tel" class="form-control" id="inputNumber">
-                  </div>
-                </div>
-
-                <button type="submit" class="btn btn-lg" style="background-color:#2fa8de; color:#ffffff; border-color:#ffffff; margin-bottom:5%">Submit</button>
-
-              </form>
-
     </div>
-  </div>
-</div>
-<!--------------------- /. 14th container : Apply Form --------------------->
-
-
-
-
-<!--------------------- 15th container : Contact Us --------------------->
-<div class="container" style="padding-bottom:10%">
-  <div id="contact"></div>
-  <div class="row" style="padding-top:10%">
-    <div class="col-md-12" style="padding-bottom:7%">
-      <h3 style="text-align: center">Contact Us</h3>
-    </div>
-
-      <div class="col-md-3" style="text-align:center; padding:10px 50px 0 50px">
-        <p>Startups</p>
-        <a href="mailto:startups@365x.io">startups@365x.io</a>
-      </div>
-
-      <div class="col-md-3" style="text-align:center; padding:10px 0 0 0">
-        <p>Corporates</p>
-        <a href="mailto:corporates@365x.io">corporates@365x.io</a>
-      </div>
-
-      <div class="col-md-3" style="text-align:center; padding:10px 0 0 0">
-        <p>Investors</p>
-        <a href="mailto:investors@365x.io">investors@365x.io</a>
-      </div>
-
-      <div class="col-md-3" style="text-align:center; padding:10px 50px 0 50px">
-        <p>Other Partnerships</p>
-        <a href="mailto:partners@365x.io">partners@365x.io</a>
-      </div>
-
-  </div>
-</div>
-<!--------------------- /. 15th container : Contact Us --------------------->
-
-
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="root"></div>
-
-
-</body>
-
-
-<!--------------------- FOOTER --------------------->
-<footer style="background-color:#282b39">
-
-  <!-- Copyright -->
-  <div class="col-md-4">
-    <div class="footer-copyright py-4" style="color:#a1b1bc; text-align:center; font-size:16px;">Copyright 2018 <a href="https://www.365x.io/" style="color:#04bfbf">365x.io</a> | All Rights Reserved
-    </div>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!--------------------- /. FOOTER --------------------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Copyright -->
+  </footer>
+  <!--------------------- /. FOOTER --------------------->
 </html>
