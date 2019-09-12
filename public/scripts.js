@@ -1,3 +1,52 @@
+function openDiv() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function openDiv1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function openDiv2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function openDiv3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function openDiv4() {
+  var x = document.getElementById("myDIV4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function openDiv5() {
+  var x = document.getElementById("myDIV5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 (function ($) {
   $.fn.countTo = function (options) {
     options = options || {};
@@ -95,5 +144,11 @@ jQuery(function ($) {
   options = $.extend({}, options || {}, $this.data('countToOptions') || {});
   $this.countTo(options);
   }
-});
 
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("open-p").toggle();
+  });
+});
+});
