@@ -60,12 +60,17 @@ button {
 }
 .container-fluid h3 {
 font-size:32px;
-color:#000;
+color:#fff;
 text-align: center;
+font-weight: 700
 }
 
 .container h3 {
 	font-size:32px;
+}
+
+.mySlides {
+  display: none;
 }
 
 
@@ -265,12 +270,20 @@ h2.timer.count-title.count-number {
 
 .our-mission {
   position:absolute;
-  background-color: rgba(189, 227, 245, 0.87);
+  background: url('../public/image/path1.png') ;
   height: 700px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card-our-mission {
-  margin-top: 50%;
+  margin-top: 15%;
+}
+
+.the-program {
+  background: url('../public/image/path4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .white-color {
@@ -322,20 +335,19 @@ h2.timer.count-title.count-number {
 }
 
 .background-half {
-  background-image: url('../public/img/background-half.jpg');
-  background-size: cover;
+  background-image: url('../public/image/path2.png');
+  background-repeat: no-repeat;
 }
 
 .background-blue-grey {
-  background: rgb(33,151,214);
-  background: -webkit-linear-gradient(left, rgba(33,151,214,1) 0%, rgba(57,57,57,1) 50%);
-  background: -o-linear-gradient(left, rgba(33,151,214,1) 0%, rgba(57,57,57,1) 50%);
-  background: linear-gradient(to right, rgba(33,151,214,1) 0%, rgba(57,57,57,1) 50%);
+  background: #313131;
 }
 
 .list-item {
-  padding: 90px;
+  padding: 8px;
   margin: auto;
+  display: flex;
+  padding-left: 80px;
 }
 
 .list-item ul {
@@ -351,11 +363,15 @@ h2.timer.count-title.count-number {
   border-color: #2197d6;
 }
 
+.background-blue {
+  background-color: #3ea8c2;
+  color: white;
+}
 
-
-
-
-
+.blue-center {
+  margin: 0 auto;
+  width: 55rem;
+}
 
 
 
@@ -485,4 +501,17 @@ h2.timer.count-title.count-number {
         display: block;
         visibility: visible;
     }
+}
+
+.top-content {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.content-mentor {
+  background-color: #313131;
+}
+
+.carousel-item img {
+  border-radius: 50%;
 }
