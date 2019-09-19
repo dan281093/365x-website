@@ -60,12 +60,17 @@ button {
 }
 .container-fluid h3 {
 font-size:32px;
-color:#000;
+color:#fff;
 text-align: center;
+font-weight: 700
 }
 
 .container h3 {
 	font-size:32px;
+}
+
+.mySlides {
+  display: none;
 }
 
 
@@ -358,11 +363,15 @@ h2.timer.count-title.count-number {
   border-color: #2197d6;
 }
 
+.background-blue {
+  background-color: #3ea8c2;
+  color: white;
+}
 
-
-
-
-
+.blue-center {
+  margin: 0 auto;
+  width: 55rem;
+}
 
 
 
@@ -492,4 +501,17 @@ h2.timer.count-title.count-number {
         display: block;
         visibility: visible;
     }
+}
+
+.top-content {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.content-mentor {
+  background-color: #313131;
+}
+
+.carousel-item img {
+  border-radius: 50%;
 }
